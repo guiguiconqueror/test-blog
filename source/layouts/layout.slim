@@ -13,10 +13,11 @@ html lang="fr"
     meta name="description" content="#{current_page.data.description}"
     meta name="robots" content="index,follow"
 
-    /= partial 'partials/favicon'
+    = partial 'partials/favicon'
 
     link href='http://fonts.googleapis.com/css?family=Bitter:400,700|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'
     /link rel="stylesheet" href="http://basehold.it/24"
+    link href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.min.css'
 
     = stylesheet_link_tag 'application'
     = yield_content :hero_image
@@ -27,11 +28,7 @@ html lang="fr"
 
     == yield
 
-    /= partial "partials/gallery", :locals => { gallery: data.galleries.camp}
-    /
-    /= partial "partials/call-to-action"
-
     = partial "partials/footer"
 
     = javascript_include_tag 'all'
-    /= google_analytics_universal_tag
+    = google_analytics_universal_tag

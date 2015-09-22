@@ -1,0 +1,17 @@
+// ============================================================================
+// Call to action
+// ============================================================================
+
+// Styles for call to action block
+// ------------------------------------
+.call-to-action{
+  background: url("/images/backgrounds/fire.jpg") no-repeat center #ACAEAC;
+  background-size: cover; 
+  text-align: center;
+
+  &__subtitle{
+    @extend h3;
+    color: $color-body;
+    padding: 0 0 1em 0;
+  }
+}

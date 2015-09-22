@@ -18,7 +18,6 @@ gem 'slim', '~> 3.0.2'
 gem 'bourbon'
 gem 'neat'
 
-
 ###
 # For Windows users 
 ###
