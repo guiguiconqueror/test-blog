@@ -1,0 +1,1 @@
+$(window).resize(function(){winWidth=$(window).width(),$(".flickity-viewport").height(.3*winWidth)});
