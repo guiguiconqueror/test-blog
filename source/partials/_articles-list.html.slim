@@ -24,14 +24,14 @@ ul
                    /images/blog/thumbs/#{retina} 2x",
         alt: "#{article.data.title}", class: "blog__list__img"
       .blog__list__content  
-        h2.blog__list__title 
+        h2.blog__list__title
           = link_to article.title, article, class: "blog__list__link"
         p.metas__inline
           ' Publié le
           = I18n.l article.date, format: '%e %b %Y'
           '  par
           = article.data.author
-        
+
         p = article.data.excerpt
 
 / Show links if needed

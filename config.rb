@@ -7,25 +7,25 @@ Time.zone = "Paris"
 I18n.config.enforce_available_locales = false
 
 activate :blog do |blog|
-    blog.name = "blog"
-    blog.permalink = "/{title}.html"
-    blog.sources = "/blog/{year}-{month}-{day}-{title}.html"
-    blog.layout = "layouts/blog"
-    blog.default_extension = ".markdown"
-    blog.new_article_template = "source/new-article.erb" 
+  blog.name = "blog"
+  blog.permalink = "/{title}.html"
+  blog.sources = "/blog/{year}-{month}-{day}-{title}.html"
+  blog.layout = "layouts/blog"
+  blog.default_extension = ".markdown"
+  blog.new_article_template = "source/new-article.erb"
 
   # Enable pagination
-    blog.paginate = true
-    blog.per_page = 20
-    blog.page_link = "/{num}"
+  blog.paginate = true
+  blog.per_page = 20
+  blog.page_link = "/{num}"
 
   # Custom categories
-    blog.custom_collections = {
+  blog.custom_collections = {
       category: {
-        link: '/categories/{category}.html',
-        template: '/category.html'
-      }
-    }
+      link: '/categories/{category}.html',
+      template: '/category.html'
+  }
+  }
 end
 
 page "/feed.xml", layout: false
@@ -125,8 +125,8 @@ configure :build do
     f.template_dir  = File.join(root, 'source')
     f.output_dir    = File.join(root, 'build')
     f.icons = {
-      "_favicon_template.png" => [
-        { icon: "apple-touch-icon-152x152-precomposed.png" },
+        "_favicon_template.png" => [
+            { icon: "apple-touch-icon-152x152-precomposed.png" },
         { icon: "apple-touch-icon-144x144-precomposed.png" },
         { icon: "apple-touch-icon-120x120-precomposed.png" },
         { icon: "apple-touch-icon-114x114-precomposed.png" },
@@ -144,7 +144,7 @@ configure :build do
         { icon: "favicon.png", size: "16x16" },
         { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" },
         { icon: "mstile-144x144", format: "png" },
-      ]
+    ]
     }
   end
 

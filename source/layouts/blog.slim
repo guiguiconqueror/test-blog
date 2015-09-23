@@ -1,12 +1,12 @@
 = wrap_layout :layout do
-  
+
   .div role="main"
 
     = partial "partials/header"
-    
+
     .section
       .wrapper
-        
+
         aside.metas__box
           - author = find_author(current_article.data.author)
           = image_tag "/images/members/thumbs/#{author.picture}", class: "metas__author__img"
@@ -17,7 +17,7 @@
           p.metas__label.metas__label--small
             ' Dans :
             span.metas__inline = current_article.data.category
-        
+
         article.blog__article
           p.blog__chapo = current_article.data.excerpt
 
@@ -28,11 +28,11 @@
               li.blog__nav__item.blog__nav--prev
                 - prev_article = current_article.previous_article
                 - if prev_article
-                  span 
+                  span
                     '  &#9664;
                   = link_to prev_article.title, prev_article.url, 
                     rel: 'prev', title: "Article précédent: #{prev_article.title}"
-              
+
               li.blog__nav__item.blog__nav--next
                 - next_article = current_article.next_article
                 - if next_article

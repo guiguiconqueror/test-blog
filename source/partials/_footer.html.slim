@@ -5,10 +5,10 @@ footer.footer
     ul.footer__content role="content-info"
       li.footer__content__item #{data.settings.author.address}
       li.footer__content__item Tel : #{data.settings.author.phone}
-      li.footer__content__item 
+      li.footer__content__item
         '  Mail : 
         a href="mailto:#{data.settings.author.email}" #{data.settings.author.email}
-      li.footer__content__item 
+      li.footer__content__item
         ' Suivez nous sur 
         = link_to "Facebook", data.settings.social.facebook
         '  et sur
@@ -25,7 +25,7 @@ footer.footer
         li.footer__menu__item = link_to "Mentions légales", "/mentions-legales.html", class:"footer__menu__link"
         li.footer__menu__item = link_to "Conditions générales de vente", "/cgv.html", class:"footer__menu__link"
 
-    p.footer__copyright 
+    p.footer__copyright
       '  &copy;
       = Time.now.year
       '

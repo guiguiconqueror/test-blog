@@ -5,7 +5,7 @@ description: "Camp de vacances en pleine nature en Ariège proposant divers type
 hero_image: vallee-ariege.jpg
 ---
 div role="main"
-  
+
   = partial "partials/header"
 
   .section
@@ -17,7 +17,7 @@ div role="main"
         p Toute la saison et en fonction des conditions météo, nous proposons des départs randonnées en montagne, à la journée ou en bivouac, des descentes de rivières en canoé ou de l’équitation avec les chevaux du camp.
 
         p Nous essayons de tendre vers l’autonomie énergétique et alimentaire, les résidents sont encouragés à prendre part à la production d’énergie et à l’entretien de nos jardins en permaculture.
-      
+
       .section__img
         = image_tag "/images/camp/tente-bivouac.jpg", srcset: "/images/pages/camp/tente-bivouac.jpg 1x, /images/pages/camp/tente-bivouac@2x.jpg 2x", alt: "Tente bivouac"
 
@@ -30,11 +30,11 @@ div role="main"
         p Vous pouvez également profiter de nos dortoirs de 6 ou 8 personnes dans le bâtiment principal ou si vous avez besoin de plus d’intimité de nos roulottes ou de nos yourtes.
 
         p Au cœur de camp, et proche du bâtiment principal se trouvent la plupart des ateliers auxquels vous pouvez participer. C’est aussi à cet endroit qu’ont lieu les repas en extérieur sous le grand préau ainsi que les veillées nocturnes quotidiennes autour du feu.
-      
+
       .section__img
         = image_tag "/images/camp/tente-yourte.jpg", srcset: "/images/pages/camp/tente-yourte.jpg 1x, /images/pages/camp/tente-yourte@2x.jpg 2x", alt: "Tente yourte" 
 
-  = partial "partials/gallery", locals: {gallery: data.galleries.camp}
+  = partial "partials/slider", locals: {gallery: data.galleries.camp}
 
   .section
     .wrapper.row

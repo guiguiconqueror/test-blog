@@ -5,7 +5,7 @@ description: "Réserver mon séjour au No Wifi Summercamp"
 hero_image: tente-bivouac.jpg
 ---
 div role="main"
-  
+
   = partial "partials/header"
 
   .section
@@ -22,7 +22,7 @@ div role="main"
 
           - field_set_tag do
 
-            p 
+            p
               = label_tag :nom
               = text_field_tag :nom, placeholder: "Dujardin"
 
@@ -34,7 +34,7 @@ div role="main"
               = label_tag :email
               = text_field_tag :email, placeholder: "pierredujardin@monemail.fr"
 
-            p 
+            p
               = label_tag :telephone
               = telephone_field_tag :telephone, placeholder: "06 12 34 56 78"
 

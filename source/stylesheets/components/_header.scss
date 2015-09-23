@@ -4,7 +4,7 @@
 
 // Styles for the header)
 // ------------------------------------
-.header{
+.header {
   padding: 6em 0;
   background-color: #D5DFD3 !important; // Set a color if no image
   background: url(/images/header/vallee-ariege.jpg); //default-image
@@ -12,33 +12,33 @@
   background-position: center bottom;
   text-align: center;
 
-  @include media($small){
+  @include media($small) {
     padding: 12em 0 9em 0;
   }
 
-  &__logo{
+  &__logo {
     margin-bottom: 1.5em;
   }
 
-  &__title{
+  &__title {
     @extend %h-giga;
     color: white;
     text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
 
-    @include media($small){
+    @include media($small) {
       font-size: $font-size-xxxlarge;
     }
   }
 
-  &__slogan{
+  &__slogan {
     @extend h3;
     color: white;
   }
 
-  &__infos{
-    margin-top: em(48,18);
-    color:       #BBAC8B;
-    font-size:   $font-size-body;
+  &__infos {
+    margin-top: em(48, 18);
+    color: #BBAC8B;
+    font-size: $font-size-body;
     font-weight: 400;
     text-shadow: 2px 2px 10px black;
   }

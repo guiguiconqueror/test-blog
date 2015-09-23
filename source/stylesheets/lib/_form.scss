@@ -3,7 +3,7 @@
 //  ===========================================================================
 
 fieldset {
-  margin:  0 0 $spacing-small;
+  margin: 0 0 $spacing-small;
   padding: $spacing-medium;
   background-color: white;
   border: 1px solid $color-grey-neutral;
@@ -16,14 +16,14 @@ select {
 }
 
 label {
-  margin-top: em(10,18);
+  margin-top: em(10, 18);
   margin-bottom: $spacing-small / 2;
   display: block;
-  color: $color-primary; 
+  color: $color-primary;
   font-family: $font-stack-heading;
   vertical-align: top;
-  
-  @include media($medium){
+
+  @include media($medium) {
     display: inline-block;
     width: 20%;
   }
@@ -33,7 +33,7 @@ label {
   }
 }
 
-#{$all-text-inputs}{
+#{$all-text-inputs} {
   box-sizing: border-box;
   width: 100%;
   padding: $spacing-medium / 3;
@@ -43,7 +43,7 @@ label {
   border-radius: $base-border-radius;
   transition: border-color;
 
-  @include media($medium){
+  @include media($medium) {
     display: inline-block;
     width: 80%;
   }
@@ -79,17 +79,18 @@ input::-moz-placeholder {
 }
 
 textarea:-moz-placeholder,
-input:-moz-placeholder {   /* Older versions of Firefox */
+input:-moz-placeholder {
+  /* Older versions of Firefox */
   font-style: italic;
 }
 
 textarea:-ms-input-placeholder,
-input:-ms-input-placeholder { 
+input:-ms-input-placeholder {
   font-style: italic;
 }
 
 textarea {
   resize: vertical;
-  margin:  0 0 1.5em 0;
+  margin: 0 0 1.5em 0;
   height: 12em;
 }
